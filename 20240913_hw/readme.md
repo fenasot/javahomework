@@ -18,6 +18,8 @@ ymd 或 myd 或 dmy 都可
 
 使用方式
 ----
+日期資料為固定，只能做排序的動作
+
 
 使用預設值
 ``` terminal
@@ -28,6 +30,7 @@ java -jar P20240913_homework3-0.0.1-SNAPSHOT.jar sort
 ``` terminal
 java -jar P20240913_homework3-0.0.1-SNAPSHOT.jar sort myd false 
 ```
+![alt text](image-1.png)
 
 ## 二、大樂透
 args
@@ -37,17 +40,18 @@ args
 固定為 bingo
 
 ### args[1] 輸入兩個特別數字 :
-當作最近兩期的頭獎特別號碼
+當作最近兩期的頭獎特別號碼，並排除掉
 
 ### args[2] 輸入十二個普通數字 : 
 
-當作最近兩期的頭獎普通號碼
+當作最近兩期的頭獎普通號碼，並排除掉
 
 
 使用方式
 ----
 
-數字超過規定或少於規定數量會報錯
+數字超過規定或少於規定數量會報錯，每次固定生成兩張不與前兩期頭獎號碼相同的彩券
 ``` terminal
 java -jar P20240913_homework3-0.0.1-SNAPSHOT.jar bingo "1 4" "3 6 14 26 40 44 23 15 36 7 2 5"
 ```
+![alt text](image.png)
