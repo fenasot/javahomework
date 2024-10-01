@@ -12,3 +12,9 @@
 遊戲(P20240930/lottery)::
 最高可排除42個數字，不檢查是否重複
 
+Postman用途::
+模擬HTTP Request 的工具，能夠快速的測試API 是否能夠正常的請求資料，並得到正確的請求結果。
+
+cURL用途::
+使用URL 指令getting 或sending 資料的command-line 工具，主要用在沒有圖形介面的Liunx server或其他設備上
+，但windows也可使用，並可透過crul指令直接下載檔案並安裝。
