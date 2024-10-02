@@ -100,7 +100,10 @@ public class LotteryService {
 		timesCheck(times);
 	}
 	
-
+	/**
+ 	 * 取得輸入超出可限制的範圍而被忽略的數字
+      	 * @return outRangeNums
+	 */
 	public Set<Integer> getOutRangeNums() {
 		return outRangeNums;
 	}
@@ -140,7 +143,7 @@ public class LotteryService {
 	 */
 	public ArrayList<int[]> writeBingo(String times) throws InputParameterException {
 		
-		if(times == "") {
+		if(times == null || times.equals("")) {
 			throw new InputParameterException("輸入參數為空?");
 		}
 		
