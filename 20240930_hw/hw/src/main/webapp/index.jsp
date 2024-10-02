@@ -22,7 +22,8 @@
 				<h2>您還尚未登入，請先登入後才可進行遊戲</h2>
 				<h3><a href="<%= request.getContextPath() %>/login">登入</a></h3>
 				<% } %>
-			</div>		  
+			</div>		
+			<h3><a href="${ pageContext.request.contextPath }/lottery">遊玩</a></h3>  
 		  </div>
 		</div>
 
